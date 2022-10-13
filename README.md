@@ -10,3 +10,6 @@ This pcb is used to get (RX) a 3-pin DMX signal (A (+), B (-), GND), read it and
 
 # Code
 Code can be found on: https://github.com/Marthaarman/dmx-transceiver
+
+# schematics
+The schematics can be found in [https://github.com/Marthaarman/dmx_interceptor_PCB/pcb_interceptor.pdf](https://github.com/Marthaarman/dmx_interceptor_PCB/pcb_interceptor.pdf)
