@@ -1,0 +1,360 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Arduino Pro Mini DMX interceptor"
+Date "2022-09-17"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L mart_library:max485_to_RS485 mod1
+U 1 1 6192B3A3
+P 7200 2650
+F 0 "mod1" H 7200 3265 50  0000 C CNN
+F 1 "max485_to_RS485" H 7200 3174 50  0000 C CNN
+F 2 "mart_library:max485_to_rs485" H 7100 2250 50  0001 C CNN
+F 3 "" H 7100 2250 50  0001 C CNN
+	1    7200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L mart_library:max485_to_RS485 mod2
+U 1 1 6192C761
+P 7200 3500
+F 0 "mod2" H 7200 4115 50  0000 C CNN
+F 1 "max485_to_RS485" H 7200 4024 50  0000 C CNN
+F 2 "mart_library:max485_to_rs485" H 7100 3100 50  0001 C CNN
+F 3 "" H 7100 3100 50  0001 C CNN
+	1    7200 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2300 8300 2300
+Wire Wire Line
+	8300 2300 8300 3150
+Wire Wire Line
+	8300 3150 7650 3150
+Wire Wire Line
+	8300 2300 8300 1700
+Wire Wire Line
+	8300 1700 5600 1700
+Connection ~ 8300 2300
+Text Label 8300 2300 0    50   ~ 0
+5V
+Wire Wire Line
+	7850 3450 7650 3450
+Wire Wire Line
+	7650 2600 7850 2600
+Wire Wire Line
+	7850 2600 7850 2800
+Wire Wire Line
+	7850 4850 7850 4650
+Connection ~ 7850 3450
+$Comp
+L power:GND #PWR01
+U 1 1 6192F1AC
+P 7850 4850
+F 0 "#PWR01" H 7850 4600 50  0001 C CNN
+F 1 "GND" H 7855 4677 50  0000 C CNN
+F 2 "" H 7850 4850 50  0001 C CNN
+F 3 "" H 7850 4850 50  0001 C CNN
+	1    7850 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2600 5750 2600
+Wire Wire Line
+	6400 2700 6400 3150
+Wire Wire Line
+	6400 3150 6750 3150
+Wire Wire Line
+	6750 3250 6450 3250
+Wire Wire Line
+	6450 3350 6750 3350
+Wire Wire Line
+	6750 2500 6550 2500
+Wire Wire Line
+	6550 2500 6550 2400
+Wire Wire Line
+	6550 2400 6750 2400
+Wire Wire Line
+	6450 3250 6450 3350
+Connection ~ 6450 3350
+Wire Wire Line
+	6450 3350 6450 4650
+Wire Wire Line
+	6550 2400 6100 2400
+Connection ~ 6550 2400
+Wire Wire Line
+	3350 1950 3350 4850
+Text Label 4000 1850 0    50   ~ 0
+VIN
+Text Label 3350 5550 0    50   ~ 0
+GND
+Text Label 6150 2400 0    50   ~ 0
+RE_DE_TX
+Text Label 6450 4250 0    50   ~ 0
+RE_DE_RX
+Text Label 5800 2600 0    50   ~ 0
+D_TX
+Text Label 6400 2850 0    50   ~ 0
+D_RX
+Wire Wire Line
+	8300 3150 8300 6600
+Connection ~ 8300 3150
+Wire Wire Line
+	5200 6700 5200 7100
+Wire Wire Line
+	5200 7100 2050 7100
+Text Label 2800 7100 0    50   ~ 0
+switch
+Text Label 2400 4150 0    50   ~ 0
+switch
+$Comp
+L mart_library:R-generic R1
+U 1 1 6196AD3C
+P 2700 4850
+F 0 "R1" V 2311 4850 50  0000 C CNN
+F 1 "R-generic" V 2600 4850 50  0001 C CNN
+F 2 "mart_library:smd_0603_1608-Metric" V 2402 4850 50  0000 C CNN
+F 3 "~" H 2700 4850 50  0001 C CNN
+F 4 "10k" V 2493 4850 50  0000 C CNN "Resistance"
+F 5 "" H 2700 4850 50  0001 C CNN "Manufacturer"
+F 6 "" H 2700 4850 50  0001 C CNN "Manufacturer Part Link"
+F 7 "RNCP0603FTD10K0" V 2584 4850 50  0000 C CNN "MPN"
+	1    2700 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2050 4850 2050 4150
+Wire Wire Line
+	2050 7100 2050 4850
+Connection ~ 2050 4850
+Wire Wire Line
+	2550 4850 2050 4850
+Wire Wire Line
+	2850 4850 3350 4850
+Wire Wire Line
+	4900 6600 8300 6600
+Wire Wire Line
+	4900 6700 5200 6700
+Wire Wire Line
+	3000 1950 3350 1950
+$Comp
+L mart_library:TB004-508-03BE J3
+U 1 1 6326367E
+P 9500 2700
+F 0 "J3" H 9730 2746 50  0000 L CNN
+F 1 "TB004-508-03BE" H 9730 2655 50  0000 L CNN
+F 2 "CUI_TB004-508-03BE" H 9400 2950 50  0001 L BNN
+F 3 "" H 9500 2700 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 9400 3050 50  0001 L BNN "STANDARD"
+F 5 "CUI" H 9400 3150 50  0001 L BNN "MANUFACTURER"
+F 6 "TB004-508-03BE" H 9750 3300 50  0001 C CNN "mpn"
+	1    9500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L mart_library:TB004-508-03BE J4
+U 1 1 632644DD
+P 9500 3550
+F 0 "J4" H 9730 3596 50  0000 L CNN
+F 1 "TB004-508-03BE" H 9730 3505 50  0000 L CNN
+F 2 "CUI_TB004-508-03BE" H 9400 3800 50  0001 L BNN
+F 3 "" H 9500 3550 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 9400 3900 50  0001 L BNN "STANDARD"
+F 5 "CUI" H 9400 4000 50  0001 L BNN "MANUFACTURER"
+F 6 "TB004-508-03BE" H 9750 4150 50  0001 C CNN "mpn"
+	1    9500 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3650 7850 3650
+Connection ~ 7850 3650
+Wire Wire Line
+	7850 3650 7850 3450
+Wire Wire Line
+	9100 2800 7850 2800
+Connection ~ 7850 2800
+Wire Wire Line
+	7850 2800 7850 3450
+Wire Wire Line
+	7650 2500 8550 2500
+Wire Wire Line
+	8550 2500 8550 2700
+Wire Wire Line
+	8750 2600 8750 2400
+Wire Wire Line
+	7650 3250 8800 3250
+Wire Wire Line
+	8800 3250 8800 3450
+Wire Wire Line
+	8800 3450 9100 3450
+Wire Wire Line
+	7650 3350 8550 3350
+Wire Wire Line
+	8550 3350 8550 3550
+Wire Wire Line
+	8550 3550 9100 3550
+Text Label 8550 2800 0    50   ~ 0
+GND(1)
+Text Label 8100 3650 0    50   ~ 0
+GND(1)
+Text Label 8600 3550 0    50   ~ 0
+RX-(A)DATA+(3)
+Text Label 8450 3250 0    50   ~ 0
+RX-(B)DATA-(2)
+Text Label 8600 2700 0    50   ~ 0
+TX-(A)DATA+(3)
+$Comp
+L mart_library:ARDUINO_PRO_MINI U1
+U 1 1 6325DE28
+P 4900 4250
+F 0 "U1" H 4900 5617 50  0000 C CNN
+F 1 "ARDUINO_PRO_MINI" H 4900 5526 50  0000 C CNN
+F 2 "MODULE_ARDUINO_PRO_MINI" H 4900 4250 50  0001 L BNN
+F 3 "" H 4900 4250 50  0001 L BNN
+F 4 "N/A" H 4900 4250 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "Manufacturer Recommendations" H 4900 4250 50  0001 L BNN "STANDARD"
+F 6 "N/A" H 4900 4250 50  0001 L BNN "PARTREV"
+F 7 "SparkFun Electronics" H 4900 4250 50  0001 L BNN "MANUFACTURER"
+F 8 "DEV-11113" H 4900 4250 50  0001 C CNN "mpn"
+	1    4900 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2600 5750 4050
+Wire Wire Line
+	5750 4050 5600 4050
+Wire Wire Line
+	5550 4150 5600 4150
+Wire Wire Line
+	6000 4150 6000 2700
+Wire Wire Line
+	6000 2700 6400 2700
+Wire Wire Line
+	5550 4650 5600 4650
+Wire Wire Line
+	5550 4550 5600 4550
+Wire Wire Line
+	6100 2400 6100 4550
+Wire Wire Line
+	7850 4650 6900 4650
+Wire Wire Line
+	6900 4650 6900 5250
+Wire Wire Line
+	6900 5250 6200 5250
+Connection ~ 7850 4650
+Wire Wire Line
+	7850 4650 7850 3650
+Wire Wire Line
+	5550 5350 5600 5350
+Wire Wire Line
+	6200 5350 6200 5250
+Connection ~ 6200 5250
+Wire Wire Line
+	6200 5250 5600 5250
+Wire Wire Line
+	6200 5350 6200 5750
+Wire Wire Line
+	6200 5750 3350 5750
+Wire Wire Line
+	3350 5750 3350 4850
+Connection ~ 6200 5350
+Connection ~ 3350 4850
+Wire Wire Line
+	2050 4150 3600 4150
+Wire Wire Line
+	3600 4150 3600 5550
+Wire Wire Line
+	3600 5550 5700 5550
+Wire Wire Line
+	5700 5550 5700 4950
+Wire Wire Line
+	5700 4950 5600 4950
+Wire Wire Line
+	5650 1850 5650 3350
+Wire Wire Line
+	5650 3350 5600 3350
+Wire Wire Line
+	3000 1850 5650 1850
+Wire Wire Line
+	5600 3150 5600 1700
+Text Label 6850 1700 0    50   ~ 0
+5V
+$Comp
+L mart_library:TB010-508-02BE J1
+U 1 1 6327ED24
+P 2600 1850
+F 0 "J1" H 2493 1583 50  0000 C CNN
+F 1 "TB010-508-02BE" H 2493 1674 50  0000 C CNN
+F 2 "CUI_TB010-508-02BE" H 2600 1850 50  0001 L BNN
+F 3 "" H 2600 1850 50  0001 L BNN
+F 4 "CUI" H 2600 1850 50  0001 L BNN "MANUFACTURER"
+F 5 "Manufacturer Recommendations" H 2600 1850 50  0001 L BNN "STANDARD"
+F 6 "TB010-508-02BE" H 2600 1850 50  0001 C CNN "mnp"
+	1    2600 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L mart_library:TB010-508-02BE J2
+U 1 1 6327FF40
+P 4500 6600
+F 0 "J2" H 4393 6333 50  0000 C CNN
+F 1 "TB010-508-02BE" H 4393 6424 50  0000 C CNN
+F 2 "CUI_TB010-508-02BE" H 4500 6600 50  0001 L BNN
+F 3 "" H 4500 6600 50  0001 L BNN
+F 4 "CUI" H 4500 6600 50  0001 L BNN "MANUFACTURER"
+F 5 "Manufacturer Recommendations" H 4500 6600 50  0001 L BNN "STANDARD"
+F 6 "TB010-508-02BE" H 4500 6600 50  0001 C CNN "mnp"
+	1    4500 6600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8750 2600 9100 2600
+Text Label 8450 2400 0    50   ~ 0
+TX-(B)DATA-(2)
+Wire Wire Line
+	8550 2700 9100 2700
+Wire Wire Line
+	7650 2400 8750 2400
+Connection ~ 5600 1700
+Wire Wire Line
+	5600 1700 5550 1700
+Connection ~ 5600 3350
+Wire Wire Line
+	5600 3350 5550 3350
+Connection ~ 5600 4050
+Wire Wire Line
+	5600 4050 5550 4050
+Connection ~ 5600 4150
+Wire Wire Line
+	5600 4150 6000 4150
+Connection ~ 5600 4550
+Wire Wire Line
+	5600 4550 6100 4550
+Connection ~ 5600 4650
+Wire Wire Line
+	5600 4650 6450 4650
+Connection ~ 5600 4950
+Wire Wire Line
+	5600 4950 5550 4950
+Connection ~ 5600 5250
+Wire Wire Line
+	5600 5250 5550 5250
+Connection ~ 5600 5350
+Wire Wire Line
+	5600 5350 6200 5350
+Wire Wire Line
+	5600 3250 5600 3150
+Connection ~ 5600 3150
+Wire Wire Line
+	5600 5150 5600 5250
+$EndSCHEMATC

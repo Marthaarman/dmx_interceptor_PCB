@@ -1,0 +1,5 @@
+old/
+OUTPUT/
+smb_*
+sym-lib-table
+fp-*

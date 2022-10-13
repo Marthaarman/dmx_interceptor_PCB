@@ -1,0 +1,9 @@
+Reference, Value, Footprint, Datasheet, MPN, Resistance, MANUFACTURER, STANDARD, mpn, MAXIMUM_PACKAGE_HEIGHT, PARTREV, mnp
+"mod1","max485_to_RS485","mart_library:max485_to_rs485",""
+"mod2","max485_to_RS485","mart_library:max485_to_rs485",""
+"R1","R-generic","mart_library:smd_0603_1608-Metric","~","RNCP0603FTD10K0","10k","","","","","",""
+"J3","TB004-508-03BE","CUI_TB004-508-03BE","","","","CUI","Manufacturer Recommendations","TB004-508-03BE","","",""
+"J4","TB004-508-03BE","CUI_TB004-508-03BE","","","","CUI","Manufacturer Recommendations","TB004-508-03BE","","",""
+"U1","ARDUINO_PRO_MINI","MODULE_ARDUINO_PRO_MINI","","","","SparkFun Electronics","Manufacturer Recommendations","DEV-11113","N/A","N/A",""
+"J1","TB010-508-02BE","CUI_TB010-508-02BE","","","","CUI","Manufacturer Recommendations","","","","TB010-508-02BE"
+"J2","TB010-508-02BE","CUI_TB010-508-02BE","","","","CUI","Manufacturer Recommendations","","","","TB010-508-02BE"
