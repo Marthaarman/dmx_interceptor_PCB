@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/mnt/share/Embedded projecten/dmx/interceptor/PCB/dmx_interceptor/dmx_interceptor.kicad_sch</source>
+    <date>di 21 feb 2023 21:58:51 CET</date>
+    <tool>Eeschema 7.0.0-da2b9df05c~163~ubuntu22.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>dmx_interceptor.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>TB010-508-02BE</value>
+      <footprint>CUI_TB010-508-02BE</footprint>
+      <fields>
+        <field name="MANUFACTURER">CUI</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="mnp">TB010-508-02BE</field>
+      </fields>
+      <libsource lib="dmx_interceptor" part="TB010-508-02BE" description=""/>
+      <property name="MANUFACTURER" value="CUI"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="mnp" value="TB010-508-02BE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dmx_interceptor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e905144b-e8fe-4e37-9665-87fcb9d145f3</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>TB010-508-02BE</value>
+      <footprint>CUI_TB010-508-02BE</footprint>
+      <fields>
+        <field name="MANUFACTURER">CUI</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="mnp">TB010-508-02BE</field>
+      </fields>
+      <libsource lib="dmx_interceptor" part="TB010-508-02BE" description=""/>
+      <property name="MANUFACTURER" value="CUI"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="mnp" value="TB010-508-02BE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dmx_interceptor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>66576e96-0902-4f0a-94ba-8055f8b31c5c</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>TB004-508-03BE</value>
+      <footprint>CUI_TB004-508-03BE</footprint>
+      <fields>
+        <field name="MANUFACTURER">CUI</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="mpn">TB004-508-03BE</field>
+      </fields>
+      <libsource lib="dmx_interceptor" part="TB004-508-03BE" description=""/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="MANUFACTURER" value="CUI"/>
+      <property name="mpn" value="TB004-508-03BE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dmx_interceptor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0a4fe7c7-42aa-451b-b379-304eaa840c8d</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>TB004-508-03BE</value>
+      <footprint>CUI_TB004-508-03BE</footprint>
+      <fields>
+        <field name="MANUFACTURER">CUI</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="mpn">TB004-508-03BE</field>
+      </fields>
+      <libsource lib="dmx_interceptor" part="TB004-508-03BE" description=""/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="MANUFACTURER" value="CUI"/>
+      <property name="mpn" value="TB004-508-03BE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dmx_interceptor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>102e6aaa-3b19-4ea2-8ed2-c441b9cec319</tstamps>
+    </comp>
+    <comp ref="mod1">
+      <value>max485_to_RS485</value>
+      <footprint>mart_library:max485_to_rs485</footprint>
+      <libsource lib="dmx_interceptor" part="max485_to_RS485" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dmx_interceptor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ac910fbd-e202-488c-82e4-5400229b860f</tstamps>
+    </comp>
+    <comp ref="mod2">
+      <value>max485_to_RS485</value>
+      <footprint>mart_library:max485_to_rs485</footprint>
+      <libsource lib="dmx_interceptor" part="max485_to_RS485" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dmx_interceptor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b7a22623-7f88-48b3-a0ff-883f65124e87</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>R-generic</value>
+      <footprint>mart_library:smd_0603_1608-Metric</footprint>
+      <fields>
+        <field name="MPN">RNCP0603FTD10K0</field>
+        <field name="Resistance">10k</field>
+      </fields>
+      <libsource lib="dmx_interceptor" part="R-generic" description="Resistor"/>
+      <property name="Resistance" value="10k"/>
+      <property name="Manufacturer" value=""/>
+      <property name="Manufacturer Part Link" value=""/>
+      <property name="MPN" value="RNCP0603FTD10K0"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dmx_interceptor.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a667f5e5-12da-40b1-ae19-f380453b9f36</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>ARDUINO_PRO_MINI</value>
+      <footprint>MODULE_ARDUINO_PRO_MINI</footprint>
+      <fields>
+        <field name="MANUFACTURER">SparkFun Electronics</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">N/A</field>
+        <field name="PARTREV">N/A</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="mpn">DEV-11113</field>
+      </fields>
+      <libsource lib="dmx_interceptor" part="ARDUINO_PRO_MINI" description=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="N/A"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="PARTREV" value="N/A"/>
+      <property name="MANUFACTURER" value="SparkFun Electronics"/>
+      <property name="mpn" value="DEV-11113"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dmx_interceptor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f7503256-3f57-48c8-80f9-21f386075539</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="dmx_interceptor" part="ARDUINO_PRO_MINI">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ARDUINO_PRO_MINI</field>
+        <field name="Footprint">MODULE_ARDUINO_PRO_MINI</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">N/A</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">N/A</field>
+        <field name="MANUFACTURER">SparkFun Electronics</field>
+      </fields>
+      <pins>
+        <pin num="JP1_1" name="DTR" type="input"/>
+        <pin num="JP1_2" name="TXO" type="bidirectional"/>
+        <pin num="JP1_3" name="RXI" type="bidirectional"/>
+        <pin num="JP1_4" name="VCC" type="power_in"/>
+        <pin num="JP1_5" name="GND" type="power_in"/>
+        <pin num="JP1_6" name="GND" type="power_in"/>
+        <pin num="JP2_1" name="A4" type="bidirectional"/>
+        <pin num="JP2_2" name="A5" type="bidirectional"/>
+        <pin num="JP3_1" name="A6" type="input"/>
+        <pin num="JP3_2" name="A7" type="input"/>
+        <pin num="JP6_1" name="RAW" type="power_in"/>
+        <pin num="JP6_2" name="GND_1" type="power_in"/>
+        <pin num="JP6_3" name="RST_1" type="input"/>
+        <pin num="JP6_4" name="VCC_1" type="power_in"/>
+        <pin num="JP6_5" name="A3" type="bidirectional"/>
+        <pin num="JP6_6" name="A2" type="bidirectional"/>
+        <pin num="JP6_7" name="A1" type="bidirectional"/>
+        <pin num="JP6_8" name="A0" type="bidirectional"/>
+        <pin num="JP6_9" name="SCK" type="bidirectional"/>
+        <pin num="JP6_10" name="MISO" type="bidirectional"/>
+        <pin num="JP6_11" name="MOSI" type="bidirectional"/>
+        <pin num="JP6_12" name="D10" type="bidirectional"/>
+        <pin num="JP7_1" name="D9" type="bidirectional"/>
+        <pin num="JP7_2" name="D8" type="bidirectional"/>
+        <pin num="JP7_3" name="D7" type="bidirectional"/>
+        <pin num="JP7_4" name="D6" type="bidirectional"/>
+        <pin num="JP7_5" name="D5" type="bidirectional"/>
+        <pin num="JP7_6" name="D4" type="bidirectional"/>
+        <pin num="JP7_7" name="D3" type="bidirectional"/>
+        <pin num="JP7_8" name="D2" type="bidirectional"/>
+        <pin num="JP7_9" name="GND_2" type="power_in"/>
+        <pin num="JP7_10" name="RST_2" type="input"/>
+        <pin num="JP7_11" name="RXI_2" type="bidirectional"/>
+        <pin num="JP7_12" name="TXO_2" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="dmx_interceptor" part="R-generic">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>smd_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R-generic</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dmx_interceptor" part="TB004-508-03BE">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">TB004-508-03BE</field>
+        <field name="Footprint">CUI_TB004-508-03BE</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="MANUFACTURER">CUI</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dmx_interceptor" part="TB010-508-02BE">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">TB010-508-02BE</field>
+        <field name="Footprint">CUI_TB010-508-02BE</field>
+        <field name="MANUFACTURER">CUI</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dmx_interceptor" part="max485_to_RS485">
+      <fields>
+        <field name="Reference">mod</field>
+        <field name="Value">max485_to_RS485</field>
+        <field name="Footprint">mart_library:max485_to_rs485</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="input"/>
+        <pin num="2" name="B" type="bidirectional"/>
+        <pin num="3" name="A" type="bidirectional"/>
+        <pin num="4" name="GND" type="bidirectional"/>
+        <pin num="5" name="RO" type="bidirectional"/>
+        <pin num="6" name="RE" type="bidirectional"/>
+        <pin num="7" name="DE" type="bidirectional"/>
+        <pin num="8" name="DI" type="bidirectional"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="dmx_interceptor">
+      <uri>/mnt/share/Embedded projecten/dmx/interceptor/PCB/dmx_interceptor/dmx_interceptor.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/5V">
+      <node ref="J2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="JP6_4" pinfunction="VCC_1" pintype="power_in"/>
+      <node ref="mod1" pin="1" pinfunction="VCC" pintype="input"/>
+      <node ref="mod2" pin="1" pinfunction="VCC" pintype="input"/>
+    </net>
+    <net code="2" name="/D_RX">
+      <node ref="mod2" pin="5" pinfunction="RO" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="/D_TX">
+      <node ref="mod1" pin="8" pinfunction="DI" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/RE_DE_RX">
+      <node ref="mod2" pin="6" pinfunction="RE" pintype="bidirectional"/>
+      <node ref="mod2" pin="7" pinfunction="DE" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/RE_DE_TX">
+      <node ref="mod1" pin="6" pinfunction="RE" pintype="bidirectional"/>
+      <node ref="mod1" pin="7" pinfunction="DE" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/RX-(A)DATA+(3)">
+      <node ref="J4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="mod2" pin="3" pinfunction="A" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/RX-(B)DATA-(2)">
+      <node ref="J4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="mod2" pin="2" pinfunction="B" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/TX-(A)DATA+(3)">
+      <node ref="J3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="mod1" pin="3" pinfunction="A" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/TX-(B)DATA-(2)">
+      <node ref="J3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="mod1" pin="2" pinfunction="B" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="/VIN">
+      <node ref="J1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="11" name="/switch">
+      <node ref="J2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="12" name="GND">
+      <node ref="J1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J3" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="J4" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="JP1_5" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="JP1_6" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="JP6_2" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="mod1" pin="4" pinfunction="GND" pintype="bidirectional"/>
+      <node ref="mod2" pin="4" pinfunction="GND" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="unconnected-(U1-A0-PadJP6_8)">
+      <node ref="U1" pin="JP6_8" pinfunction="A0" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="unconnected-(U1-A1-PadJP6_7)">
+      <node ref="U1" pin="JP6_7" pinfunction="A1" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="unconnected-(U1-A2-PadJP6_6)">
+      <node ref="U1" pin="JP6_6" pinfunction="A2" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="unconnected-(U1-A3-PadJP6_5)">
+      <node ref="U1" pin="JP6_5" pinfunction="A3" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="unconnected-(U1-A4-PadJP2_1)">
+      <node ref="U1" pin="JP2_1" pinfunction="A4" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="unconnected-(U1-A5-PadJP2_2)">
+      <node ref="U1" pin="JP2_2" pinfunction="A5" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="unconnected-(U1-A6-PadJP3_1)">
+      <node ref="U1" pin="JP3_1" pinfunction="A6" pintype="input"/>
+    </net>
+    <net code="20" name="unconnected-(U1-A7-PadJP3_2)">
+      <node ref="U1" pin="JP3_2" pinfunction="A7" pintype="input"/>
+    </net>
+    <net code="21" name="unconnected-(U1-D2-PadJP7_8)">
+      <node ref="U1" pin="JP7_8" pinfunction="D2" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="unconnected-(U1-D3-PadJP7_7)">
+      <node ref="U1" pin="JP7_7" pinfunction="D3" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="unconnected-(U1-D4-PadJP7_6)">
+      <node ref="U1" pin="JP7_6" pinfunction="D4" pintype="bidirectional"/>
+    </net>
+    <net code="24" name="unconnected-(U1-D5-PadJP7_5)">
+      <node ref="U1" pin="JP7_5" pinfunction="D5" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="unconnected-(U1-D6-PadJP7_4)">
+      <node ref="U1" pin="JP7_4" pinfunction="D6" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="unconnected-(U1-D7-PadJP7_3)">
+      <node ref="U1" pin="JP7_3" pinfunction="D7" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="unconnected-(U1-D8-PadJP7_2)">
+      <node ref="U1" pin="JP7_2" pinfunction="D8" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="unconnected-(U1-D9-PadJP7_1)">
+      <node ref="U1" pin="JP7_1" pinfunction="D9" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="unconnected-(U1-D10-PadJP6_12)">
+      <node ref="U1" pin="JP6_12" pinfunction="D10" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="unconnected-(U1-DTR-PadJP1_1)">
+      <node ref="U1" pin="JP1_1" pinfunction="DTR" pintype="input"/>
+    </net>
+    <net code="31" name="unconnected-(U1-GND_2-PadJP7_9)">
+      <node ref="U1" pin="JP7_9" pinfunction="GND_2" pintype="power_in"/>
+    </net>
+    <net code="32" name="unconnected-(U1-MISO-PadJP6_10)">
+      <node ref="U1" pin="JP6_10" pinfunction="MISO" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="unconnected-(U1-MOSI-PadJP6_11)">
+      <node ref="U1" pin="JP6_11" pinfunction="MOSI" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="unconnected-(U1-RAW-PadJP6_1)">
+      <node ref="U1" pin="JP6_1" pinfunction="RAW" pintype="power_in"/>
+    </net>
+    <net code="35" name="unconnected-(U1-RST_1-PadJP6_3)">
+      <node ref="U1" pin="JP6_3" pinfunction="RST_1" pintype="input"/>
+    </net>
+    <net code="36" name="unconnected-(U1-RST_2-PadJP7_10)">
+      <node ref="U1" pin="JP7_10" pinfunction="RST_2" pintype="input"/>
+    </net>
+    <net code="37" name="unconnected-(U1-RXI-PadJP1_3)">
+      <node ref="U1" pin="JP1_3" pinfunction="RXI" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="unconnected-(U1-RXI_2-PadJP7_11)">
+      <node ref="U1" pin="JP7_11" pinfunction="RXI_2" pintype="bidirectional"/>
+    </net>
+    <net code="39" name="unconnected-(U1-SCK-PadJP6_9)">
+      <node ref="U1" pin="JP6_9" pinfunction="SCK" pintype="bidirectional"/>
+    </net>
+    <net code="40" name="unconnected-(U1-TXO-PadJP1_2)">
+      <node ref="U1" pin="JP1_2" pinfunction="TXO" pintype="bidirectional"/>
+    </net>
+    <net code="41" name="unconnected-(U1-TXO_2-PadJP7_12)">
+      <node ref="U1" pin="JP7_12" pinfunction="TXO_2" pintype="bidirectional"/>
+    </net>
+    <net code="42" name="unconnected-(U1-VCC-PadJP1_4)">
+      <node ref="U1" pin="JP1_4" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="43" name="unconnected-(mod1-RO-Pad5)">
+      <node ref="mod1" pin="5" pinfunction="RO" pintype="bidirectional"/>
+    </net>
+    <net code="44" name="unconnected-(mod2-DI-Pad8)">
+      <node ref="mod2" pin="8" pinfunction="DI" pintype="bidirectional"/>
+    </net>
+  </nets>
+</export>

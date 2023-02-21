@@ -1,0 +1,6 @@
+"#","Reference","Qty","Value","Footprint","DNP"
+"1","J1, J2","2","TB010-508-02BE","CUI_TB010-508-02BE",""
+"2","J3, J4","2","TB004-508-03BE","CUI_TB004-508-03BE",""
+"3","mod1, mod2","2","max485_to_RS485","mart_library:max485_to_rs485",""
+"4","R1","1","R-generic","mart_library:smd_0603_1608-Metric",""
+"5","U1","1","ARDUINO_PRO_MINI","MODULE_ARDUINO_PRO_MINI",""

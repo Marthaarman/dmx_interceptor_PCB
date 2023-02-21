@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "dmx_interceptor")(type "KiCad")(uri "${KIPRJMOD}/dmx_interceptor.kicad_sym")(options "")(descr ""))
+)
