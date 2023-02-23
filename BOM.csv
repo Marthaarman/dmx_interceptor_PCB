@@ -1,0 +1,6 @@
+"Reference","Value","Footprint","Datasheet","MANUFACTURER","MAXIMUM_PACKAGE_HEIGHT","MPN","Manufacturer","Manufacturer Part Link","PARTREV","Resistance","STANDARD","Qty"
+"J1, J2","TB010-508-02BE","dmx_interceptor:CUI_TB010-508-02BE","","CUI","","TB010-508-02BE","","","","","Manufacturer Recommendations","2"
+"J3, J4","TB004-508-03BE","dmx_interceptor:CUI_TB004-508-03BE","","CUI","","TB004-508-03BE","","","","","Manufacturer Recommendations","2"
+"mod1, mod2","max485_to_RS485","dmx_interceptor:max485_to_rs485","","","","","","","","","","2"
+"R1","R-generic","dmx_interceptor:smd_0603_1608-Metric","~","","","RNCP0603FTD10K0","","","","10k","","1"
+"U1","ARDUINO_PRO_MINI","dmx_interceptor:MODULE_ARDUINO_PRO_MINI","","SparkFun Electronics","N/A","DEV-11113","","","N/A","","Manufacturer Recommendations","1"

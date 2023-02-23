@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/mnt/share/Embedded projecten/dmx/interceptor/PCB/dmx_interceptor/dmx_interceptor.kicad_sch</source>
-    <date>di 21 feb 2023 21:58:51 CET</date>
+    <date>do 23 feb 2023 10:24:48 CET</date>
     <tool>Eeschema 7.0.0-da2b9df05c~163~ubuntu22.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -26,7 +26,7 @@
   <components>
     <comp ref="J1">
       <value>TB010-508-02BE</value>
-      <footprint>CUI_TB010-508-02BE</footprint>
+      <footprint>dmx_interceptor:CUI_TB010-508-02BE</footprint>
       <fields>
         <field name="MANUFACTURER">CUI</field>
         <field name="STANDARD">Manufacturer Recommendations</field>
@@ -43,7 +43,7 @@
     </comp>
     <comp ref="J2">
       <value>TB010-508-02BE</value>
-      <footprint>CUI_TB010-508-02BE</footprint>
+      <footprint>dmx_interceptor:CUI_TB010-508-02BE</footprint>
       <fields>
         <field name="MANUFACTURER">CUI</field>
         <field name="STANDARD">Manufacturer Recommendations</field>
@@ -60,7 +60,7 @@
     </comp>
     <comp ref="J3">
       <value>TB004-508-03BE</value>
-      <footprint>CUI_TB004-508-03BE</footprint>
+      <footprint>dmx_interceptor:CUI_TB004-508-03BE</footprint>
       <fields>
         <field name="MANUFACTURER">CUI</field>
         <field name="STANDARD">Manufacturer Recommendations</field>
@@ -77,7 +77,7 @@
     </comp>
     <comp ref="J4">
       <value>TB004-508-03BE</value>
-      <footprint>CUI_TB004-508-03BE</footprint>
+      <footprint>dmx_interceptor:CUI_TB004-508-03BE</footprint>
       <fields>
         <field name="MANUFACTURER">CUI</field>
         <field name="STANDARD">Manufacturer Recommendations</field>
@@ -94,7 +94,7 @@
     </comp>
     <comp ref="mod1">
       <value>max485_to_RS485</value>
-      <footprint>mart_library:max485_to_rs485</footprint>
+      <footprint>dmx_interceptor:max485_to_rs485</footprint>
       <libsource lib="dmx_interceptor" part="max485_to_RS485" description=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="dmx_interceptor.kicad_sch"/>
@@ -103,7 +103,7 @@
     </comp>
     <comp ref="mod2">
       <value>max485_to_RS485</value>
-      <footprint>mart_library:max485_to_rs485</footprint>
+      <footprint>dmx_interceptor:max485_to_rs485</footprint>
       <libsource lib="dmx_interceptor" part="max485_to_RS485" description=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="dmx_interceptor.kicad_sch"/>
@@ -112,7 +112,7 @@
     </comp>
     <comp ref="R1">
       <value>R-generic</value>
-      <footprint>mart_library:smd_0603_1608-Metric</footprint>
+      <footprint>dmx_interceptor:smd_0603_1608-Metric</footprint>
       <fields>
         <field name="MPN">RNCP0603FTD10K0</field>
         <field name="Resistance">10k</field>
@@ -131,7 +131,7 @@
     </comp>
     <comp ref="U1">
       <value>ARDUINO_PRO_MINI</value>
-      <footprint>MODULE_ARDUINO_PRO_MINI</footprint>
+      <footprint>dmx_interceptor:MODULE_ARDUINO_PRO_MINI</footprint>
       <fields>
         <field name="MANUFACTURER">SparkFun Electronics</field>
         <field name="MAXIMUM_PACKAGE_HEIGHT">N/A</field>
@@ -268,21 +268,26 @@
   <nets>
     <net code="1" name="/5V">
       <node ref="J2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="JP1_4" pinfunction="VCC" pintype="power_in"/>
       <node ref="U1" pin="JP6_4" pinfunction="VCC_1" pintype="power_in"/>
       <node ref="mod1" pin="1" pinfunction="VCC" pintype="input"/>
       <node ref="mod2" pin="1" pinfunction="VCC" pintype="input"/>
     </net>
     <net code="2" name="/D_RX">
+      <node ref="U1" pin="JP7_11" pinfunction="RXI_2" pintype="bidirectional"/>
       <node ref="mod2" pin="5" pinfunction="RO" pintype="bidirectional"/>
     </net>
     <net code="3" name="/D_TX">
+      <node ref="U1" pin="JP7_12" pinfunction="TXO_2" pintype="bidirectional"/>
       <node ref="mod1" pin="8" pinfunction="DI" pintype="bidirectional"/>
     </net>
     <net code="4" name="/RE_DE_RX">
+      <node ref="U1" pin="JP7_4" pinfunction="D6" pintype="bidirectional"/>
       <node ref="mod2" pin="6" pinfunction="RE" pintype="bidirectional"/>
       <node ref="mod2" pin="7" pinfunction="DE" pintype="bidirectional"/>
     </net>
     <net code="5" name="/RE_DE_TX">
+      <node ref="U1" pin="JP7_5" pinfunction="D5" pintype="bidirectional"/>
       <node ref="mod1" pin="6" pinfunction="RE" pintype="bidirectional"/>
       <node ref="mod1" pin="7" pinfunction="DE" pintype="bidirectional"/>
     </net>
@@ -304,10 +309,12 @@
     </net>
     <net code="10" name="/VIN">
       <node ref="J1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="JP6_1" pinfunction="RAW" pintype="power_in"/>
     </net>
     <net code="11" name="/switch">
       <node ref="J2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="JP7_1" pinfunction="D9" pintype="bidirectional"/>
     </net>
     <net code="12" name="GND">
       <node ref="J1" pin="1" pinfunction="1" pintype="passive"/>
@@ -317,6 +324,7 @@
       <node ref="U1" pin="JP1_5" pinfunction="GND" pintype="power_in"/>
       <node ref="U1" pin="JP1_6" pinfunction="GND" pintype="power_in"/>
       <node ref="U1" pin="JP6_2" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U1" pin="JP7_9" pinfunction="GND_2" pintype="power_in"/>
       <node ref="mod1" pin="4" pinfunction="GND" pintype="bidirectional"/>
       <node ref="mod2" pin="4" pinfunction="GND" pintype="bidirectional"/>
     </net>
@@ -353,67 +361,43 @@
     <net code="23" name="unconnected-(U1-D4-PadJP7_6)">
       <node ref="U1" pin="JP7_6" pinfunction="D4" pintype="bidirectional"/>
     </net>
-    <net code="24" name="unconnected-(U1-D5-PadJP7_5)">
-      <node ref="U1" pin="JP7_5" pinfunction="D5" pintype="bidirectional"/>
-    </net>
-    <net code="25" name="unconnected-(U1-D6-PadJP7_4)">
-      <node ref="U1" pin="JP7_4" pinfunction="D6" pintype="bidirectional"/>
-    </net>
-    <net code="26" name="unconnected-(U1-D7-PadJP7_3)">
+    <net code="24" name="unconnected-(U1-D7-PadJP7_3)">
       <node ref="U1" pin="JP7_3" pinfunction="D7" pintype="bidirectional"/>
     </net>
-    <net code="27" name="unconnected-(U1-D8-PadJP7_2)">
+    <net code="25" name="unconnected-(U1-D8-PadJP7_2)">
       <node ref="U1" pin="JP7_2" pinfunction="D8" pintype="bidirectional"/>
     </net>
-    <net code="28" name="unconnected-(U1-D9-PadJP7_1)">
-      <node ref="U1" pin="JP7_1" pinfunction="D9" pintype="bidirectional"/>
-    </net>
-    <net code="29" name="unconnected-(U1-D10-PadJP6_12)">
+    <net code="26" name="unconnected-(U1-D10-PadJP6_12)">
       <node ref="U1" pin="JP6_12" pinfunction="D10" pintype="bidirectional"/>
     </net>
-    <net code="30" name="unconnected-(U1-DTR-PadJP1_1)">
+    <net code="27" name="unconnected-(U1-DTR-PadJP1_1)">
       <node ref="U1" pin="JP1_1" pinfunction="DTR" pintype="input"/>
     </net>
-    <net code="31" name="unconnected-(U1-GND_2-PadJP7_9)">
-      <node ref="U1" pin="JP7_9" pinfunction="GND_2" pintype="power_in"/>
-    </net>
-    <net code="32" name="unconnected-(U1-MISO-PadJP6_10)">
+    <net code="28" name="unconnected-(U1-MISO-PadJP6_10)">
       <node ref="U1" pin="JP6_10" pinfunction="MISO" pintype="bidirectional"/>
     </net>
-    <net code="33" name="unconnected-(U1-MOSI-PadJP6_11)">
+    <net code="29" name="unconnected-(U1-MOSI-PadJP6_11)">
       <node ref="U1" pin="JP6_11" pinfunction="MOSI" pintype="bidirectional"/>
     </net>
-    <net code="34" name="unconnected-(U1-RAW-PadJP6_1)">
-      <node ref="U1" pin="JP6_1" pinfunction="RAW" pintype="power_in"/>
-    </net>
-    <net code="35" name="unconnected-(U1-RST_1-PadJP6_3)">
+    <net code="30" name="unconnected-(U1-RST_1-PadJP6_3)">
       <node ref="U1" pin="JP6_3" pinfunction="RST_1" pintype="input"/>
     </net>
-    <net code="36" name="unconnected-(U1-RST_2-PadJP7_10)">
+    <net code="31" name="unconnected-(U1-RST_2-PadJP7_10)">
       <node ref="U1" pin="JP7_10" pinfunction="RST_2" pintype="input"/>
     </net>
-    <net code="37" name="unconnected-(U1-RXI-PadJP1_3)">
+    <net code="32" name="unconnected-(U1-RXI-PadJP1_3)">
       <node ref="U1" pin="JP1_3" pinfunction="RXI" pintype="bidirectional"/>
     </net>
-    <net code="38" name="unconnected-(U1-RXI_2-PadJP7_11)">
-      <node ref="U1" pin="JP7_11" pinfunction="RXI_2" pintype="bidirectional"/>
-    </net>
-    <net code="39" name="unconnected-(U1-SCK-PadJP6_9)">
+    <net code="33" name="unconnected-(U1-SCK-PadJP6_9)">
       <node ref="U1" pin="JP6_9" pinfunction="SCK" pintype="bidirectional"/>
     </net>
-    <net code="40" name="unconnected-(U1-TXO-PadJP1_2)">
+    <net code="34" name="unconnected-(U1-TXO-PadJP1_2)">
       <node ref="U1" pin="JP1_2" pinfunction="TXO" pintype="bidirectional"/>
     </net>
-    <net code="41" name="unconnected-(U1-TXO_2-PadJP7_12)">
-      <node ref="U1" pin="JP7_12" pinfunction="TXO_2" pintype="bidirectional"/>
-    </net>
-    <net code="42" name="unconnected-(U1-VCC-PadJP1_4)">
-      <node ref="U1" pin="JP1_4" pinfunction="VCC" pintype="power_in"/>
-    </net>
-    <net code="43" name="unconnected-(mod1-RO-Pad5)">
+    <net code="35" name="unconnected-(mod1-RO-Pad5)">
       <node ref="mod1" pin="5" pinfunction="RO" pintype="bidirectional"/>
     </net>
-    <net code="44" name="unconnected-(mod2-DI-Pad8)">
+    <net code="36" name="unconnected-(mod2-DI-Pad8)">
       <node ref="mod2" pin="8" pinfunction="DI" pintype="bidirectional"/>
     </net>
   </nets>
