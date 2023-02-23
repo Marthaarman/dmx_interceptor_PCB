@@ -2,6 +2,8 @@
 A PCB designed for the dmx-transceiver library, to which an extra switch can be connected.
 https://github.com/Marthaarman/dmx-transceiver
 
+schematics: https://github.com/Marthaarman/dmx_interceptor_PCB/blob/main/dmx_interceptor.pdf
+
 ## components
 - 2x debo rs485 TTL - https://www.reichelt.de/de/en/developer-boards-ttl-to-rs485-max485-debo-rs485-ttl-p282703.html
 - 1x arduino pro mini - https://www.digikey.nl/nl/products/detail/sparkfun-electronics/DEV-11113/5140820
