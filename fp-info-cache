@@ -1,42 +1,77 @@
-10062072029352
-dmx_interceptor
+18457934102172
+Mart
+AMPHENOL_10118193-0001LF
+
+
+0
+11
+11
+Mart
 CUI_TB003V-500-P02BE
 
 
 0
 2
 2
-dmx_interceptor
+Mart
 CUI_TB004-508-03BE
 
 
 0
 3
 3
-dmx_interceptor
+Mart
 CUI_TB010-508-02BE
 
 
 0
 2
 2
-dmx_interceptor
+Mart
 MODULE_ARDUINO_PRO_MINI
 
 
 0
 34
 34
-dmx_interceptor
+Mart
+R_THT
+
+
+0
+2
+2
+Mart
+SOT23-5L
+<b>Small Outline Transistor</b><p>package type OT
+
+0
+5
+5
+Mart
+XCVR_ESP32-C3-MINI-1-N4
+
+
+0
+61
+61
+Mart
 max485_to_rs485
 
 
 0
 8
 8
-dmx_interceptor
+Mart
 smd_0603_1608-Metric
 SMD 0603 (1608 Metric)
+generic, resistor, inductor, capacitor
+0
+2
+2
+Mart
+smd_0805_2012-Metric
+SMD 0805 (2012 Metric)
 generic, resistor, inductor, capacitor
 0
 2
